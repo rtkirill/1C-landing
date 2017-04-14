@@ -9,7 +9,8 @@ body {
   overflow-x: hidden;
 }
 .btn {
-  padding: 0 5px;
+  padding: 0 14px;
+  box-sizing: border-box;
   height: 40px;
   font-size: 11px;
   border: 0;
@@ -20,11 +21,12 @@ body {
   color: #fff;
 }
 .header {
-  padding: 0 10%;
+  padding: 0 8.333%;
   box-sizing: border-box;
   background: url('/img/background.jpg');
   width: 100%;
   height: 750px;
+  position: relative;
 }
 .header .top-header {
   height: 120px;
@@ -66,7 +68,8 @@ body {
 }
 .header .main-header .forma {
   height: 102px;
-  width: 100%;
+  width: 500px;
+  display: table;
   background-color: #879e43;
   border-radius: 3px;
   padding: 15px 10px 15px;
@@ -85,17 +88,25 @@ body {
   font-size: 16px;
   padding: 0 10px;
   height: 39px;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+.header .main-header .forma input:nth-child(2) {
   width: 180px;
+}
+.header .main-header .forma input:nth-child(3) {
+  width: 195px;
 }
 .header img.woman {
   position: absolute;
-  top: 163px;
-  right: -60px;
+  bottom: 0;
+  right: 0;
+  width: 65%;
 }
 .section,
 .price {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 70px;
   display: table;
   width: 100%;
 }
@@ -103,6 +114,7 @@ body {
 .price h2 {
   font-size: 27px;
   font-weight: 400;
+  margin-top: 0;
 }
 .section ul li,
 .price ul li {
@@ -116,6 +128,7 @@ body {
   font-weight: 300;
   font-style: italic;
   font-size: 16px;
+  margin: 0;
 }
 .section {
   background-color: #fff;
@@ -123,27 +136,43 @@ body {
 .section h2 {
   margin-bottom: 75px;
 }
+.section h2.videoTitle {
+  margin-bottom: 60px;
+}
+.section h2.uniqueTitle {
+  margin: 20px 0 90px;
+}
 .section ul {
   padding: 0 5%;
+  margin: 0;
 }
 .section ul li {
   width: 33%;
   padding: 0 10px;
-  margin-bottom: 50px;
-}
-.section ul li h3 {
-  font-size: 16px;
-  font-weight: 600;
+  margin-bottom: 60px;
 }
 .section ul li img {
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   max-width: 100%;
   height: auto;
 }
+.section ul.uniqueUl li {
+  margin-bottom: 100px;
+}
+.section ul.uniqueUl li h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.section ul.uniqueUl li img {
+  margin-bottom: 60px;
+}
 .price {
-  padding-bottom: 60px;
+  padding-bottom: 65px;
   background: url('/img/background.jpg');
   height: 687px;
+  box-sizing: border-box;
 }
 .price h2 {
   margin-bottom: 70px;
@@ -152,20 +181,22 @@ body {
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
+  margin: 0;
   margin-bottom: 90px;
 }
 .price ul {
   padding: 0 10%;
+  margin: 0;
 }
 .price ul li {
   width: 50%;
   margin-right: -3px;
-  margin-bottom: 50px;
 }
 .price ul li h3 {
   color: #9f0d64;
   font-weight: 700;
   font-size: 27px;
+  margin: 0;
   margin-bottom: 100px;
 }
 .price ul li:nth-child(1) {
@@ -175,6 +206,7 @@ body {
   padding-left: 10%;
 }
 .price p.footerText {
+  margin: 0;
   margin-top: 125px;
   font-size: 14px;
   font-weight: 300;
@@ -192,7 +224,7 @@ body {
   border-radius: 3px;
   background-color: #222322;
   position: absolute;
-  right: 100px;
+  right: 8.333%;
   top: 28px;
   z-index: 999;
   text-align: left;
